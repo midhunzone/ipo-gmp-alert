@@ -61,6 +61,14 @@ Use Windows Task Scheduler to run `venv\Scripts\python.exe` with the argument `"
 
 The program depends on InvestorGain's publicly accessible page and table structure. If the website changes, the parser may need updating. IPO GMP is unofficial market information and is not a reliable guarantee of listing performance.
 
+## Demo
+
+The IPO GMP Alert System monitors IPO grey market premium data and sends Telegram notifications when an IPO meets the configured GMP threshold.
+
+### Screenshot
+
+![IPO Alert Screenshot](IPO_Screenshot.jpeg)
+
 ## Security
 
 Credentials are loaded from `.env` using `python-dotenv`. The `.env` file is excluded by `.gitignore`; only `.env.example`, containing placeholders, should be published. Never commit real bot tokens or chat IDs. If a token has ever been exposed publicly, revoke it through Telegram's BotFather.
